@@ -4,7 +4,7 @@
     agentSlug: window.EarnLinksConfig?.agentSlug || 'default-agent',
     chatUrl: window.EarnLinksConfig?.chatUrl || 'https://example.com/chat',
     embedSize: {
-      width: window.EarnLinksConfig?.embedSize?.width || '350px',
+      width: window.EarnLinksConfig?.embedSize?.width || '400px',
       height: window.EarnLinksConfig?.embedSize?.height || '600px',
     },
     apiUrl: 'https://api.tagwell.co/api/v4/ai-agent/get-agent/details/',
@@ -13,8 +13,8 @@
   // Dynamic height and width adjustment
   const embedHeight =
     typeof config.embedSize.height === 'string'
-      ? `${parseInt(config.embedSize.height) - 50}px`
-      : `${config.embedSize.height - 50}px`;
+      ? `${parseInt(config.embedSize.height)}px`
+      : `${config.embedSize.height}px`;
   const embedWidth =
     typeof config.embedSize.width === 'string'
       ? config.embedSize.width

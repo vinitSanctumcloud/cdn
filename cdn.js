@@ -43,7 +43,7 @@
       font-weight: bold;
       margin-bottom: 8px;
       margin-right: 5px;
-      color: #fff;
+      color: #333;
       background: rgba(255, 255, 255, 0.9);
       padding: 4px 8px;
       border-radius: 6px;
